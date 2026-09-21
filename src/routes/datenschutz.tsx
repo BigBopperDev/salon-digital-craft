@@ -128,19 +128,6 @@ function DatenschutzPage() {
           Hintere Bleiche 34, 55116 Mainz.
         </p>
 
-        <h2>Fragen zum Datenschutz</h2>
-        <p>
-          {salon.responsible}
-          <br />
-          c/o {salon.name}
-          <br />
-          {salon.street}
-          <br />
-          {salon.zip} {salon.city}
-          <br />
-          <a href={`mailto:${salon.email}`}>{salon.email}</a>
-        </p>
-
         <h2>Änderungen dieser Datenschutzerklärung</h2>
         <p>
           Wir passen diese Datenschutzerklärung an, sobald Änderungen unserer Leistungen oder der
