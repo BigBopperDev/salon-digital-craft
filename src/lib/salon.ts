@@ -9,7 +9,6 @@ export const salon = {
   email: "salon@friseur-emmelshausen.de",
   webmaster: "webmaster@friseur-emmelshausen.de",
   owner: "Selda Avuklar",
-  responsible: "Franz-Josef Kölzer",
   osm: "https://www.openstreetmap.org/search?query=Rhein-Mosel-Stra%C3%9Fe%2044%2C%2056281%20Emmelshausen",
 } as const;
 
