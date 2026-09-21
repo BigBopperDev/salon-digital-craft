@@ -35,7 +35,7 @@ function Index() {
             Herzlich willkommen bei {salon.name}
           </h1>
           <p className="mt-5 text-base leading-relaxed text-muted-foreground">
-            Schön, Sie zu sehen. Hier finden Sie das Team von Sie &amp; Er Haarmoden. Schauen Sie
+            Schön, Sie zu sehen. Hier finden Sie das Team von Sie & Er Haarmoden. Schauen Sie
             doch ruhig einmal bei uns herein und lernen Sie uns kennen. Wir freuen uns auf Ihr
             Interesse.
           </p>
@@ -87,7 +87,18 @@ function Index() {
       </section>
 
       <section className="mx-auto max-w-5xl px-5 py-16">
-        <div className="grid gap-6 sm:grid-cols-3">
+        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="rounded-lg border border-border bg-card p-6">
+            <p className="eyebrow">Öffnungszeiten</p>
+            <dl className="mt-2 grid gap-1 text-sm text-foreground">
+              {openingHours.map((entry) => (
+                <div key={entry.day} className="flex justify-between gap-3">
+                  <dt>{entry.day}</dt>
+                  <dd className="text-right text-muted-foreground">{entry.hours}</dd>
+                </div>
+              ))}
+            </dl>
+          </div>
           <div className="rounded-lg border border-border bg-card p-6">
             <p className="eyebrow">Anrufen</p>
             <a
@@ -117,7 +128,7 @@ function Index() {
               {salon.zip} {salon.city}
             </p>
             <Link to="/kontakt" className="mt-2 inline-block text-sm text-primary hover:underline">
-              Karte &amp; Kontaktformular
+              Karte & Kontaktformular
             </Link>
           </div>
         </div>
