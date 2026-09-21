@@ -13,6 +13,16 @@ export const salon = {
   osm: "https://www.openstreetmap.org/search?query=Rhein-Mosel-Stra%C3%9Fe%2044%2C%2056281%20Emmelshausen",
 } as const;
 
+export const openingHours = [
+  { day: "Montag", hours: "geschlossen" },
+  { day: "Dienstag", hours: "08:30 – 18:00 Uhr" },
+  { day: "Mittwoch", hours: "08:30 – 18:00 Uhr" },
+  { day: "Donnerstag", hours: "08:30 – 18:00 Uhr" },
+  { day: "Freitag", hours: "08:30 – 18:00 Uhr" },
+  { day: "Samstag", hours: "08:30 – 13:00 Uhr" },
+  { day: "Sonntag", hours: "geschlossen" },
+] as const;
+
 export const team = [
   { name: "Frau S. Avuklar", role: "Inhaberin, Friseurin, Colorspezialistin" },
   { name: "Frau C. Scherf", role: "Friseurmeisterin" },

@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useState, type FormEvent } from "react";
 
-import { salon } from "@/lib/salon";
+import { salon, openingHours } from "@/lib/salon";
 
 export const Route = createFileRoute("/kontakt")({
   head: () => ({
@@ -208,6 +208,17 @@ function KontaktPage() {
                 {salon.email}
               </a>
             </address>
+            <div className="mt-5 border-t border-border pt-4">
+              <p className="eyebrow">Öffnungszeiten</p>
+              <dl className="mt-2 grid gap-1 text-sm text-foreground">
+                {openingHours.map((entry) => (
+                  <div key={entry.day} className="flex justify-between gap-3">
+                    <dt>{entry.day}</dt>
+                    <dd className="text-right text-muted-foreground">{entry.hours}</dd>
+                  </div>
+                ))}
+              </dl>
+            </div>
           </div>
           <MapCard />
         </div>
