@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useState, type FormEvent } from "react";
 
-import { salon } from "@/lib/salon";
+import { salon, openingHours } from "@/lib/salon";
 
 export const Route = createFileRoute("/kontakt")({
   head: () => ({
