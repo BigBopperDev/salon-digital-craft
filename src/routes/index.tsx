@@ -1,7 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 
 import salonPhoto from "@/assets/salon-aussenansicht.jpg";
-import { salon, team } from "@/lib/salon";
+import { salon, team, openingHours } from "@/lib/salon";
 
 export const Route = createFileRoute("/")({
   head: () => ({
